@@ -55,7 +55,6 @@ jobs:
       shell: bash
       run: |
         cd build && ninja
-    - name: Upload
     - uses: actions/upload-artifact@master
       with:
         name: build

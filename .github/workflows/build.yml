@@ -22,7 +22,7 @@ jobs:
       run: |
         cmake -S . -B build -G Ninja \
           -DCMAKE_BUILD_TYPE=Release \
-          -DENABLE_CCACHE=$enable_ccache
+          -DSKIA_OPENGL_LIBRARY=""
     - name: Compiling
       shell: bash
       run: |
